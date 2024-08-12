@@ -42,7 +42,7 @@ const config: Config = {
         },
     },
     darkMode: "selector",
-    plugins: [addVariablesForColors],
+    plugins: [addVariablesForColors, require("@tailwindcss/typography")],
 };
 export default config;
 

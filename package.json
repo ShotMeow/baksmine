@@ -1,6 +1,6 @@
 {
   "name": "baksmine",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/typography": "^0.5.14",
     "clsx": "^2.1.1",
     "eslint": "^8",
     "postcss": "^8",
