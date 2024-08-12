@@ -8,7 +8,7 @@ import {TextGenerateEffect} from "@/features/theme/components/TextGenerateEffect
 const Home: FC = () => {
     return (
         <main className="container flex h-screen flex-col items-center justify-center text-center">
-            <AuroraBackground className="absolute inset-x-0 top-0 -z-50 dark:opacity-50"/>
+            <AuroraBackground className="absolute inset-x-0 top-0 -z-50 animate-show dark:opacity-50"/>
             <h1 className="font-montserrat text-3xl font-bold sm:text-6xl lg:text-8xl">
                 <TextGenerateEffect words={"BAKSMINE"} duration={2}/>
             </h1>
