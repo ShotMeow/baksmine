@@ -11,9 +11,6 @@ const config: Config = {
       animation: {
         aurora: "aurora 60s linear infinite",
       },
-      colors: {
-        purple: "#8C00FF",
-      },
       keyframes: {
         aurora: {
           from: {
