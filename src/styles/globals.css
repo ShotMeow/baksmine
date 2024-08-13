@@ -3,5 +3,26 @@
 @tailwind utilities;
 
 html, body {
+    @apply scroll-smooth;
     scrollbar-gutter: stable;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+::selection {
+    @apply bg-purple-900 text-white;
+}
+
+*::-webkit-scrollbar {
+    @apply w-2 h-1;
+}
+
+*::-webkit-scrollbar-track {
+    @apply bg-zinc-100 dark:bg-zinc-900;
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply bg-zinc-300 dark:bg-zinc-500 rounded-full;
 }

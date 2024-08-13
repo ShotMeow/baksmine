@@ -4,8 +4,8 @@ import { motion, stagger, useAnimate } from "framer-motion";
 
 export const TextGenerateEffect = ({
   words,
-  className,
   filter = true,
+  className,
   duration = 0.5,
 }: {
   words: string;
@@ -27,11 +27,11 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       },
     );
-  }, [scope.current]);
+  }, [animate, duration, filter]);
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.p className={className} ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
@@ -44,7 +44,7 @@ export const TextGenerateEffect = ({
             </motion.span>
           );
         })}
-      </motion.div>
+      </motion.p>
     );
   };
 

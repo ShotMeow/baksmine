@@ -12,13 +12,12 @@ const Home: FC = () => {
       <h1 className="font-montserrat text-3xl font-bold sm:text-6xl lg:text-8xl">
         <TextGenerateEffect words={"BAKSMINE"} duration={2} />
       </h1>
-      <p className="relative mt-4 text-lg dark:text-zinc-300 sm:text-xl md:mt-10">
-        <TextGenerateEffect
-          words={
-            "Приватный сервер для классического выживания в комфортной атмосфере."
-          }
-        />
-      </p>
+      <TextGenerateEffect
+        className="relative mt-4 text-lg dark:text-zinc-300 sm:text-xl md:mt-10"
+        words={
+          "Приватный сервер для классического выживания в комфортной атмосфере."
+        }
+      />
       <div className="mt-10 md:mt-20">
         <Button>
           <Gamepad />
