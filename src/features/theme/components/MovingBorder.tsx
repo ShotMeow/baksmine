@@ -24,7 +24,6 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
 }) {
   return (
     <motion.button
@@ -56,7 +55,7 @@ export function Button({
 
       <div
         className={clsx(
-          "relative flex size-full items-center justify-center gap-2 border border-zinc-700 bg-zinc-900 text-base font-medium text-white antialiased backdrop-blur-xl",
+          "relative flex size-full items-center justify-center gap-2 border border-zinc-300 bg-zinc-100 text-base font-medium antialiased backdrop-blur-xl dark:border-zinc-700 dark:bg-zinc-900 dark:text-white",
           className,
         )}
         style={{
@@ -80,7 +79,6 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
 }) => {
   const pathRef = useRef<any>();
   const progress = useMotionValue<number>(0);
