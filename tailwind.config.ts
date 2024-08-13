@@ -3,8 +3,6 @@ import type { Config } from "tailwindcss";
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
@@ -25,7 +23,6 @@ const config = {
       animation: {
         aurora: "aurora 60s linear infinite",
         show: "show 2s ease",
-        scale: "scale 4s ease",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
@@ -44,16 +41,6 @@ const config = {
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
-          },
-        },
-        scale: {
-          from: {
-            opacity: "0",
-            transform: "scale(0.6)",
-          },
-          to: {
-            opacity: "1",
-            transform: "scale(1)",
           },
         },
         show: {

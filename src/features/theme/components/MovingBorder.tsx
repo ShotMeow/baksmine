@@ -27,7 +27,7 @@ export function Button({
 }) {
   return (
     <motion.button
-      initial={{ scale: 0, filter: "blur(10px)", opacity: 0 }}
+      initial={{ scale: .6, filter: "blur(10px)", opacity: 0 }}
       animate={{ scale: 1, filter: "blur(0px)", opacity: 1 }}
       transition={{ duration: 2 }}
       className={clsx(
