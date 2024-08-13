@@ -75,6 +75,13 @@ const Commands: FC = () => {
                   </span>
                 </TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell>
+                  <kbd>ПКМ</kbd>{" "}
+                  <span className="text-zinc-500">(на игрока)</span>
+                </TableCell>
+                <TableCell>Сесть на голову другому игроку</TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </section>
