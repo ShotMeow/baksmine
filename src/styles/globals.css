@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    scrollbar-gutter: stable;
-}
-
 body {
-    @apply dark:bg-zinc-950 dark:text-white transition-colors font-inter;
+    scrollbar-gutter: stable;
 }
