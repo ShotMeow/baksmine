@@ -19,7 +19,7 @@ const Home: FC = () => {
           }
         />
       </p>
-      <div className="mt-10 animate-show md:mt-20">
+      <div className="mt-10 md:mt-20">
         <Button>
           <Gamepad />
           Купить проходку

@@ -12,7 +12,6 @@ import clsx from "clsx";
 export function Button({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
   containerClassName,
   borderClassName,
   duration,
@@ -21,7 +20,6 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
@@ -29,7 +27,10 @@ export function Button({
   [key: string]: any;
 }) {
   return (
-    <Component
+    <motion.button
+      initial={{ scale: 0, filter: "blur(10px)", opacity: 0 }}
+      animate={{ scale: 1, filter: "blur(0px)", opacity: 1 }}
+      transition={{ duration: 2 }}
       className={clsx(
         "relative h-16 w-56 overflow-hidden bg-transparent p-px text-xl ",
         containerClassName,
@@ -55,7 +56,7 @@ export function Button({
 
       <div
         className={clsx(
-          "relative flex size-full items-center justify-center gap-2 border border-zinc-700 bg-zinc-800/[0.8] text-base font-medium text-white antialiased backdrop-blur-xl",
+          "relative flex size-full items-center justify-center gap-2 border border-zinc-700 bg-zinc-900 text-base font-medium text-white antialiased backdrop-blur-xl",
           className,
         )}
         style={{
@@ -64,7 +65,7 @@ export function Button({
       >
         {children}
       </div>
-    </Component>
+    </motion.button>
   );
 }
 
