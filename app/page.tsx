@@ -1,9 +1,9 @@
 "use client";
 import type { FC } from "react";
-import { AuroraBackground } from "@/features/theme/components/AuroraBackground";
+import { AuroraBackground } from "@/components/AuroraBackground";
 import { Gamepad } from "lucide-react";
-import { Button } from "@/features/theme/components/MovingBorder";
-import { TextGenerateEffect } from "@/features/theme/components/TextGenerateEffect";
+import { Button } from "@/components/MovingBorder";
+import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 
 const Home: FC = () => {
   return (
